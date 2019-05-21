@@ -1,0 +1,6 @@
+framework module Pods_TimeControlSystemClient {
+  umbrella header "Pods-TimeControlSystemClient-umbrella.h"
+
+  export *
+  module * { export * }
+}
