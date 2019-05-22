@@ -20,30 +20,23 @@ class PersonViewController: UIViewController {
     @IBOutlet weak var lastIn: UILabel!
     @IBOutlet weak var lastOut: UILabel!
     
-    public var pphoto: UIImage!
-    public var pcardID: String!
-    public var psurname: String!
-    public var pname: String!
-    public var ppatronym: String!
-    public var pposition: String!
-    public var plastIn: String!
-    public var plastOut: String!
+    public var employee: EmployeeCard!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     
         photo.image = UIImage(named: "LoginSuccess")
-        cardID.text! += "\t\(pcardID as String)"
-        surname.text! += "\t\(psurname as String)"
-        mainname.text! += "\t\(pname as String)"
-        patronym.text! += "\t\(ppatronym as String)"
-        position.text! += "\t\(pposition as String)"
-        lastIn.text! += "\t\(plastIn as String)"
-        lastOut.text! += "\t\(plastOut as String)"
+        cardID.text! += "\t\(employee.cardId)"
+        surname.text! += "\t\(employee.surname)"
+        mainname.text! += "\t\(employee.name)"
+        patronym.text! += "\t\(employee.patronym)"
+        position.text! += "\t\(employee.position)"
+        lastIn.text! += "\t\(employee.lastIn)"
+        lastOut.text! += "\t\(employee.lastOut)"
         
     }
     
-    @IBAction func ClosePersonCard(_ sender: Any) {
+    @IBAction func DeletePersonCard(_ sender: Any) {
         //self.navigationController?.popViewController(animated: true)
     }
     

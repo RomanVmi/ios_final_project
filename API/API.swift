@@ -37,6 +37,16 @@ struct API {
         var headers: HTTPHeaders?
         var onlyAuthorized: Bool = true
     }
+    
+    struct UsersRecords: APIRequesting {
+        var httpMethod: HTTPMethod { return .get }
+        var requestURL: String { return "employees" }
+        var requestData: [String : Any]?
+        var host: String?
+        var headers: HTTPHeaders?
+        var onlyAuthorized: Bool = true
+    }
+    
 //    struct AUTH: APIRequesting {
 //
 //        var httpMethod: HTTPMethod { return .post }

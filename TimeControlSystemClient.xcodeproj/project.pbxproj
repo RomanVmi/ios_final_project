@@ -26,8 +26,12 @@
 		301E06D22295702900B7CE19 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301E06D12295702900B7CE19 /* PersonViewController.swift */; };
 		301E06E22295C51E00B7CE19 /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301E06DD2295C51D00B7CE19 /* EventsTableViewCell.swift */; };
 		301E06E32295C51E00B7CE19 /* EventsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 301E06DE2295C51D00B7CE19 /* EventsTableViewCell.xib */; };
-		301E06E42295C51E00B7CE19 /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301E06DF2295C51D00B7CE19 /* UITableViewCell+Extensions.swift */; };
+		301E06E42295C51E00B7CE19 /* UITableViewCellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301E06DF2295C51D00B7CE19 /* UITableViewCellExtensions.swift */; };
 		301E06E62295C63400B7CE19 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301E06E52295C63400B7CE19 /* Event.swift */; };
+		301E06E82295CFE100B7CE19 /* EmployeeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301E06E72295CFE100B7CE19 /* EmployeeCard.swift */; };
+		301E06EF2295D7E200B7CE19 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301E06EE2295D7E200B7CE19 /* Employee.swift */; };
+		301E06F42295D8B700B7CE19 /* EmployeesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 301E06F32295D8B700B7CE19 /* EmployeesTableViewCell.xib */; };
+		301E06F62295EBC800B7CE19 /* EmployeesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301E06F52295EBC800B7CE19 /* EmployeesTableViewCell.swift */; };
 		301EB596229427DD00CB80D8 /* ExtensionsForViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301EB595229427DD00CB80D8 /* ExtensionsForViewController.swift */; };
 		301EB5982294297900CB80D8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301EB5972294297900CB80D8 /* LoginViewController.swift */; };
 		30278C402293FE56001599AD /* PopUpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30278C3F2293FE56001599AD /* PopUpViewController.storyboard */; };
@@ -61,8 +65,12 @@
 		301E06D12295702900B7CE19 /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
 		301E06DD2295C51D00B7CE19 /* EventsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
 		301E06DE2295C51D00B7CE19 /* EventsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventsTableViewCell.xib; sourceTree = "<group>"; };
-		301E06DF2295C51D00B7CE19 /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
+		301E06DF2295C51D00B7CE19 /* UITableViewCellExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtensions.swift; sourceTree = "<group>"; };
 		301E06E52295C63400B7CE19 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		301E06E72295CFE100B7CE19 /* EmployeeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCard.swift; sourceTree = "<group>"; };
+		301E06EE2295D7E200B7CE19 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		301E06F32295D8B700B7CE19 /* EmployeesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmployeesTableViewCell.xib; sourceTree = "<group>"; };
+		301E06F52295EBC800B7CE19 /* EmployeesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesTableViewCell.swift; sourceTree = "<group>"; };
 		301EB595229427DD00CB80D8 /* ExtensionsForViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsForViewController.swift; sourceTree = "<group>"; };
 		301EB5972294297900CB80D8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		30278C3F2293FE56001599AD /* PopUpViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopUpViewController.storyboard; sourceTree = "<group>"; };
@@ -162,19 +170,29 @@
 		301E06D82295C51D00B7CE19 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				301E06DC2295C51D00B7CE19 /* Todo */,
-				301E06DF2295C51D00B7CE19 /* UITableViewCell+Extensions.swift */,
+				301E06DF2295C51D00B7CE19 /* UITableViewCellExtensions.swift */,
+				301E06F02295D85500B7CE19 /* Employees */,
+				301E06DC2295C51D00B7CE19 /* Events */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		301E06DC2295C51D00B7CE19 /* Todo */ = {
+		301E06DC2295C51D00B7CE19 /* Events */ = {
 			isa = PBXGroup;
 			children = (
 				301E06DD2295C51D00B7CE19 /* EventsTableViewCell.swift */,
 				301E06DE2295C51D00B7CE19 /* EventsTableViewCell.xib */,
 			);
-			path = Todo;
+			path = Events;
+			sourceTree = "<group>";
+		};
+		301E06F02295D85500B7CE19 /* Employees */ = {
+			isa = PBXGroup;
+			children = (
+				301E06F32295D8B700B7CE19 /* EmployeesTableViewCell.xib */,
+				301E06F52295EBC800B7CE19 /* EmployeesTableViewCell.swift */,
+			);
+			path = Employees;
 			sourceTree = "<group>";
 		};
 		30278C3E2293FE32001599AD /* PopUpViewController */ = {
@@ -211,6 +229,8 @@
 			isa = PBXGroup;
 			children = (
 				301E06E52295C63400B7CE19 /* Event.swift */,
+				301E06EE2295D7E200B7CE19 /* Employee.swift */,
+				301E06E72295CFE100B7CE19 /* EmployeeCard.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -305,6 +325,7 @@
 				309F159422946FA10022F037 /* Podfile in Resources */,
 				301703BB22932A4A00168563 /* LaunchScreen.storyboard in Resources */,
 				309F15A12294A62E0022F037 /* Login.storyboard in Resources */,
+				301E06F42295D8B700B7CE19 /* EmployeesTableViewCell.xib in Resources */,
 				301703B822932A4A00168563 /* Assets.xcassets in Resources */,
 				301E06E32295C51E00B7CE19 /* EventsTableViewCell.xib in Resources */,
 				301E06D02295701800B7CE19 /* PersonViewController.storyboard in Resources */,
@@ -384,9 +405,12 @@
 				301E06C622956A4B00B7CE19 /* MarkWorkerViewController.swift in Sources */,
 				309F1599229475720022F037 /* APIRequesting.swift in Sources */,
 				301E06CC22956AC000B7CE19 /* LogoutViewController.swift in Sources */,
-				301E06E42295C51E00B7CE19 /* UITableViewCell+Extensions.swift in Sources */,
+				301E06E42295C51E00B7CE19 /* UITableViewCellExtensions.swift in Sources */,
 				301E06E62295C63400B7CE19 /* Event.swift in Sources */,
+				301E06EF2295D7E200B7CE19 /* Employee.swift in Sources */,
 				301703B122932A4800168563 /* AppDelegate.swift in Sources */,
+				301E06F62295EBC800B7CE19 /* EmployeesTableViewCell.swift in Sources */,
+				301E06E82295CFE100B7CE19 /* EmployeeCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
