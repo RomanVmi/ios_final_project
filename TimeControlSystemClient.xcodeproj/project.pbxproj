@@ -22,6 +22,8 @@
 		301E06C822956A9100B7CE19 /* EmployeeCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301E06C722956A9100B7CE19 /* EmployeeCardsViewController.swift */; };
 		301E06CA22956AA300B7CE19 /* ToolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301E06C922956AA300B7CE19 /* ToolsViewController.swift */; };
 		301E06CC22956AC000B7CE19 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301E06CB22956AC000B7CE19 /* LogoutViewController.swift */; };
+		301E06D02295701800B7CE19 /* PersonViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 301E06CF2295701800B7CE19 /* PersonViewController.storyboard */; };
+		301E06D22295702900B7CE19 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301E06D12295702900B7CE19 /* PersonViewController.swift */; };
 		301EB596229427DD00CB80D8 /* ExtensionsForViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301EB595229427DD00CB80D8 /* ExtensionsForViewController.swift */; };
 		301EB5982294297900CB80D8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301EB5972294297900CB80D8 /* LoginViewController.swift */; };
 		30278C402293FE56001599AD /* PopUpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30278C3F2293FE56001599AD /* PopUpViewController.storyboard */; };
@@ -51,6 +53,8 @@
 		301E06C722956A9100B7CE19 /* EmployeeCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCardsViewController.swift; sourceTree = "<group>"; };
 		301E06C922956AA300B7CE19 /* ToolsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsViewController.swift; sourceTree = "<group>"; };
 		301E06CB22956AC000B7CE19 /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
+		301E06CF2295701800B7CE19 /* PersonViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonViewController.storyboard; sourceTree = "<group>"; };
+		301E06D12295702900B7CE19 /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
 		301EB595229427DD00CB80D8 /* ExtensionsForViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsForViewController.swift; sourceTree = "<group>"; };
 		301EB5972294297900CB80D8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		30278C3F2293FE56001599AD /* PopUpViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopUpViewController.storyboard; sourceTree = "<group>"; };
@@ -85,6 +89,7 @@
 				301703C42293364800168563 /* SWRevealViewController */,
 				30278C3E2293FE32001599AD /* PopUpViewController */,
 				301703AF22932A4800168563 /* TimeControlSystemClient */,
+				301E06CB22956AC000B7CE19 /* LogoutViewController.swift */,
 				301703AE22932A4800168563 /* Products */,
 				30278C412293FF72001599AD /* Resource */,
 				EE946398FC6FD4AFF9A1FE23 /* Pods */,
@@ -103,12 +108,11 @@
 		301703AF22932A4800168563 /* TimeControlSystemClient */ = {
 			isa = PBXGroup;
 			children = (
-				301703D022934C8A00168563 /* MenuViewController.swift */,
 				301EB595229427DD00CB80D8 /* ExtensionsForViewController.swift */,
 				301703B422932A4800168563 /* SWRevealViewController.storyboard */,
 				309F159F2294A61B0022F037 /* Login */,
 				301E06CD22956C0600B7CE19 /* MenuItems */,
-				301E06CB22956AC000B7CE19 /* LogoutViewController.swift */,
+				301E06CE22956FA000B7CE19 /* PersonViewController */,
 			);
 			path = TimeControlSystemClient;
 			sourceTree = "<group>";
@@ -126,6 +130,7 @@
 		301E06CD22956C0600B7CE19 /* MenuItems */ = {
 			isa = PBXGroup;
 			children = (
+				301703D022934C8A00168563 /* MenuViewController.swift */,
 				301703C8229339C500168563 /* WorkShiftViewController.swift */,
 				301E06C1229531D500B7CE19 /* EventsHistoryViewController.swift */,
 				301E06C32295695D00B7CE19 /* HistoryViewController.swift */,
@@ -134,6 +139,15 @@
 				301E06C922956AA300B7CE19 /* ToolsViewController.swift */,
 			);
 			path = MenuItems;
+			sourceTree = "<group>";
+		};
+		301E06CE22956FA000B7CE19 /* PersonViewController */ = {
+			isa = PBXGroup;
+			children = (
+				301E06CF2295701800B7CE19 /* PersonViewController.storyboard */,
+				301E06D12295702900B7CE19 /* PersonViewController.swift */,
+			);
+			path = PersonViewController;
 			sourceTree = "<group>";
 		};
 		30278C3E2293FE32001599AD /* PopUpViewController */ = {
@@ -264,6 +278,7 @@
 				301703BB22932A4A00168563 /* LaunchScreen.storyboard in Resources */,
 				309F15A12294A62E0022F037 /* Login.storyboard in Resources */,
 				301703B822932A4A00168563 /* Assets.xcassets in Resources */,
+				301E06D02295701800B7CE19 /* PersonViewController.storyboard in Resources */,
 				301703B622932A4800168563 /* SWRevealViewController.storyboard in Resources */,
 				30278C402293FE56001599AD /* PopUpViewController.storyboard in Resources */,
 			);
@@ -325,6 +340,7 @@
 			files = (
 				309F159B229475720022F037 /* API.swift in Sources */,
 				301E06C2229531D500B7CE19 /* EventsHistoryViewController.swift in Sources */,
+				301E06D22295702900B7CE19 /* PersonViewController.swift in Sources */,
 				301703D122934C8A00168563 /* MenuViewController.swift in Sources */,
 				301E06C42295695E00B7CE19 /* HistoryViewController.swift in Sources */,
 				301EB596229427DD00CB80D8 /* ExtensionsForViewController.swift in Sources */,

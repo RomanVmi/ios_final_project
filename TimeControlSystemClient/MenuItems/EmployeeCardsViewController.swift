@@ -11,6 +11,10 @@ import UIKit
 class EmployeeCardsViewController: UIViewController {
 
     @IBOutlet weak var menuButton: UIBarButtonItem!
+    @IBAction func showPerson(_ sender: Any) {
+        let personCard = PersonViewController.cardInstance("1", "2", "3", "4", "5", "6", "7")
+        self.navigationController?.pushViewController(personCard, animated: true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
