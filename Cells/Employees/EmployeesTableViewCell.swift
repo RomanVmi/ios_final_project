@@ -13,9 +13,9 @@ class EmployeesTableViewCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var bodyLabel: UILabel!
     
-    func setup(from userRecord: Employee) {
-        self.titleLabel.text = userRecord.name
-        self.bodyLabel.text = "UserID: \(userRecord.id)"
+    func setup(from employee: Employee) {
+        self.titleLabel.text = employee.name
+        self.bodyLabel.text = "EmployeeID: \(employee.id)"
     }
     
 }
