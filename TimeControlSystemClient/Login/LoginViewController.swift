@@ -17,7 +17,9 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
     }
+    
     
     func check_auth() {
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3), execute: {
@@ -27,6 +29,7 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func LoginAction(_ sender: Any) {
+        
         let username = UserNameField.text;
         let password = PasswordField.text;
         let host = HostField.text;
@@ -52,6 +55,7 @@ class LoginViewController: UIViewController {
                 loginMessage = "Вход успешно произведен!"
                 loginImage = "LoginSuccess"
                 loginStatus = true
+                
             }
             else
                 if response["error"] != nil {
@@ -67,7 +71,9 @@ class LoginViewController: UIViewController {
             self.view.addSubview(popUpVC.view)
             popUpVC.didMove(toParent: self)
             
-            self.check_auth()
+            if loginStatus {
+                self.check_auth()
+            }
         }
     }
 }

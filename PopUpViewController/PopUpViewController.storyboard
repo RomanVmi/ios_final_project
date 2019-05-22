@@ -18,40 +18,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="Message View" translatesAutoresizingMaskIntoConstraints="NO" id="t85-2R-w9j">
-                                <rect key="frame" x="20" y="78" width="374" height="252"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <view contentMode="scaleToFill" restorationIdentifier="Message View" translatesAutoresizingMaskIntoConstraints="NO" id="t85-2R-w9j">
+                                <rect key="frame" x="5" y="152" width="404" height="250"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3R-8y-bUM">
-                                        <rect key="frame" x="120" y="206" width="135" height="31"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3R-8y-bUM">
+                                        <rect key="frame" x="137" y="210" width="130" height="30"/>
                                         <color key="backgroundColor" red="0.85938851299999997" green="0.85938851299999997" blue="0.85938851299999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Jbp-LR-Mq3"/>
+                                            <constraint firstAttribute="width" constant="130" id="qUd-Lp-eZ2"/>
+                                        </constraints>
                                         <state key="normal" title="Закрыть"/>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="closePopUp:" destination="pbU-Y8-WFK" eventType="touchUpInside" id="HW5-WE-d96"/>
                                         </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LoginError" translatesAutoresizingMaskIntoConstraints="NO" id="4kk-VW-wye">
-                                        <rect key="frame" x="113" y="30" width="149" height="101"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ошибка: сервер не отвечает" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2n-sJ-nj2">
-                                        <rect key="frame" x="0.0" y="166" width="374" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ошибка: сервер не отвечает" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2n-sJ-nj2">
+                                        <rect key="frame" x="14.5" y="165" width="375" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="375" id="RxR-8Z-BzJ"/>
+                                            <constraint firstAttribute="height" constant="25" id="pmF-jo-9P0"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="E2n-sJ-nj2" firstAttribute="top" secondItem="t85-2R-w9j" secondAttribute="top" constant="165" id="MXm-aW-jRZ"/>
+                                    <constraint firstItem="E2n-sJ-nj2" firstAttribute="centerX" secondItem="t85-2R-w9j" secondAttribute="centerX" id="TGk-VD-LDK"/>
+                                    <constraint firstAttribute="height" constant="250" id="cSY-bB-aMG"/>
+                                    <constraint firstItem="P3R-8y-bUM" firstAttribute="centerX" secondItem="t85-2R-w9j" secondAttribute="centerX" id="eYl-9M-1fn"/>
+                                    <constraint firstItem="P3R-8y-bUM" firstAttribute="top" secondItem="E2n-sJ-nj2" secondAttribute="bottom" constant="20" id="eki-dp-PBB"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="25"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginError" translatesAutoresizingMaskIntoConstraints="NO" id="4kk-VW-wye">
+                                <rect key="frame" x="132" y="194" width="150" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Csb-Ld-ZZ6"/>
+                                    <constraint firstAttribute="width" constant="150" id="nS0-Ml-v6k"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="t85-2R-w9j" firstAttribute="top" secondItem="8qM-1V-oJV" secondAttribute="top" constant="108" id="0A0-58-SBT"/>
+                            <constraint firstItem="t85-2R-w9j" firstAttribute="leading" secondItem="8qM-1V-oJV" secondAttribute="leading" constant="5" id="7XV-5r-fh6"/>
+                            <constraint firstItem="4kk-VW-wye" firstAttribute="centerX" secondItem="bL6-ml-yCL" secondAttribute="centerX" id="Hhb-hV-POK"/>
+                            <constraint firstItem="4kk-VW-wye" firstAttribute="top" secondItem="8qM-1V-oJV" secondAttribute="top" constant="150" id="PUO-5g-oby"/>
+                            <constraint firstItem="8qM-1V-oJV" firstAttribute="trailing" secondItem="t85-2R-w9j" secondAttribute="trailing" constant="5" id="WTu-Uv-1NN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="8qM-1V-oJV"/>
                     </view>
                     <connections>
@@ -63,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3bY-qe-lLQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-262" y="466"/>
+            <point key="canvasLocation" x="-262.31884057971018" y="465.40178571428567"/>
         </scene>
     </scenes>
     <resources>
