@@ -102,6 +102,9 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="ClosePersonCard:" destination="gj7-dd-PYX" eventType="touchUpInside" id="k1U-Sw-Tfq"/>
                                 </connections>
