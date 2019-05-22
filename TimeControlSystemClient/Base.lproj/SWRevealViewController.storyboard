@@ -23,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="-1036" y="1065"/>
         </scene>
-        <!--Main System Start View Controller-->
+        <!--Work Shift View Controller-->
         <scene sceneID="c5i-X0-Fvp">
             <objects>
-                <viewController id="duG-5G-WNn" customClass="MainSystemStartViewController" customModule="TimeControlSystemClient" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="duG-5G-WNn" customClass="WorkShiftViewController" customModule="TimeControlSystemClient" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="haa-Px-tvg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -46,10 +46,10 @@
             </objects>
             <point key="canvasLocation" x="2513" y="-305"/>
         </scene>
-        <!--Events History View Controller-->
+        <!--Events View Controller-->
         <scene sceneID="G2L-Ef-Sxm">
             <objects>
-                <viewController id="fqs-CG-zFn" customClass="EventsHistoryViewController" customModule="TimeControlSystemClient" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fqs-CG-zFn" customClass="EventsViewController" customModule="TimeControlSystemClient" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d1o-s7-7qc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -305,10 +305,10 @@
             </objects>
             <point key="canvasLocation" x="1645" y="380"/>
         </scene>
-        <!--Events History View Controller-->
+        <!--History View Controller-->
         <scene sceneID="8f0-KA-u5t">
             <objects>
-                <viewController id="xBe-Oe-DFf" customClass="EventsHistoryViewController" customModule="TimeControlSystemClient" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xBe-Oe-DFf" customClass="HistoryViewController" customModule="TimeControlSystemClient" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xzZ-gx-etn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -346,10 +346,10 @@
             </objects>
             <point key="canvasLocation" x="1645" y="1063"/>
         </scene>
-        <!--Events History View Controller-->
+        <!--Mark Worker View Controller-->
         <scene sceneID="cRG-cu-uxh">
             <objects>
-                <viewController id="JxG-si-T5N" customClass="EventsHistoryViewController" customModule="TimeControlSystemClient" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="JxG-si-T5N" customClass="MarkWorkerViewController" customModule="TimeControlSystemClient" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="siA-wu-10X">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -362,7 +362,7 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="menuButton" destination="ker-4x-RBL" id="Iy3-LM-Q0K"/>
+                        <outlet property="menuButton" destination="ker-4x-RBL" id="e0l-w5-nlw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jQf-EB-BN8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -387,10 +387,10 @@
             </objects>
             <point key="canvasLocation" x="1645" y="1752"/>
         </scene>
-        <!--Events History View Controller-->
+        <!--Employee Cards View Controller-->
         <scene sceneID="AoZ-GG-nKa">
             <objects>
-                <viewController id="KoP-Sy-HPg" customClass="EventsHistoryViewController" customModule="TimeControlSystemClient" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="KoP-Sy-HPg" customClass="EmployeeCardsViewController" customModule="TimeControlSystemClient" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="se6-gH-Ab2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -403,7 +403,7 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="menuButton" destination="jZw-RM-zOr" id="eVV-xP-eCH"/>
+                        <outlet property="menuButton" destination="jZw-RM-zOr" id="wbc-5k-gfw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gn4-tG-LbV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -428,10 +428,10 @@
             </objects>
             <point key="canvasLocation" x="1645" y="2492"/>
         </scene>
-        <!--Events History View Controller-->
+        <!--Tools View Controller-->
         <scene sceneID="2hH-bL-i86">
             <objects>
-                <viewController id="lOo-4H-lmt" customClass="EventsHistoryViewController" customModule="TimeControlSystemClient" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lOo-4H-lmt" customClass="ToolsViewController" customModule="TimeControlSystemClient" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="23O-zx-hB6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -444,7 +444,7 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="menuButton" destination="pvJ-nx-ONU" id="KIP-ro-Pms"/>
+                        <outlet property="menuButton" destination="pvJ-nx-ONU" id="Qn7-g8-gLd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9EI-qQ-y2Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -469,10 +469,10 @@
             </objects>
             <point key="canvasLocation" x="1645" y="3366"/>
         </scene>
-        <!--Events History View Controller-->
+        <!--Logout View Controller-->
         <scene sceneID="R9y-pD-Hgd">
             <objects>
-                <viewController id="Fst-uU-bm0" customClass="EventsHistoryViewController" customModule="TimeControlSystemClient" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Fst-uU-bm0" customClass="LogoutViewController" customModule="TimeControlSystemClient" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6fP-pw-b5W">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -480,13 +480,8 @@
                         <viewLayoutGuide key="safeArea" id="PLU-O1-Qjl"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="S8B-eh-c3E">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" image="Menu" id="ZSA-dw-yGk"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="S8B-eh-c3E"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="menuButton" destination="ZSA-dw-yGk" id="0Qg-Ae-yri"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fNY-5K-uCZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

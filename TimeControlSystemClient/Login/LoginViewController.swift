@@ -52,7 +52,7 @@ class LoginViewController: UIViewController {
             var loginStatus: Bool = false
             
             if response["auth_hash"] != nil {
-                loginMessage = "Вход успешно произведен!"
+                loginMessage = "Добро пожаловать, \(response["real_name"] as! String)!"
                 loginImage = "LoginSuccess"
                 loginStatus = true
                 

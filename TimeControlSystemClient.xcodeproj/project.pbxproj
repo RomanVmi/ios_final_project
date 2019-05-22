@@ -13,10 +13,15 @@
 		301703B822932A4A00168563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 301703B722932A4A00168563 /* Assets.xcassets */; };
 		301703BB22932A4A00168563 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 301703B922932A4A00168563 /* LaunchScreen.storyboard */; };
 		301703C322932C0300168563 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301703C222932C0300168563 /* PopUpViewController.swift */; };
-		301703C9229339C500168563 /* MainSystemStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301703C8229339C500168563 /* MainSystemStartViewController.swift */; };
+		301703C9229339C500168563 /* WorkShiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301703C8229339C500168563 /* WorkShiftViewController.swift */; };
 		301703CD22933AB400168563 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 301703CC22933AB400168563 /* SWRevealViewController.m */; };
 		301703D122934C8A00168563 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301703D022934C8A00168563 /* MenuViewController.swift */; };
 		301E06C2229531D500B7CE19 /* EventsHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301E06C1229531D500B7CE19 /* EventsHistoryViewController.swift */; };
+		301E06C42295695E00B7CE19 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301E06C32295695D00B7CE19 /* HistoryViewController.swift */; };
+		301E06C622956A4B00B7CE19 /* MarkWorkerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301E06C522956A4B00B7CE19 /* MarkWorkerViewController.swift */; };
+		301E06C822956A9100B7CE19 /* EmployeeCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301E06C722956A9100B7CE19 /* EmployeeCardsViewController.swift */; };
+		301E06CA22956AA300B7CE19 /* ToolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301E06C922956AA300B7CE19 /* ToolsViewController.swift */; };
+		301E06CC22956AC000B7CE19 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301E06CB22956AC000B7CE19 /* LogoutViewController.swift */; };
 		301EB596229427DD00CB80D8 /* ExtensionsForViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301EB595229427DD00CB80D8 /* ExtensionsForViewController.swift */; };
 		301EB5982294297900CB80D8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301EB5972294297900CB80D8 /* LoginViewController.swift */; };
 		30278C402293FE56001599AD /* PopUpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30278C3F2293FE56001599AD /* PopUpViewController.storyboard */; };
@@ -35,12 +40,17 @@
 		301703BA22932A4A00168563 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		301703BC22932A4A00168563 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		301703C222932C0300168563 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
-		301703C8229339C500168563 /* MainSystemStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSystemStartViewController.swift; sourceTree = "<group>"; };
+		301703C8229339C500168563 /* WorkShiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkShiftViewController.swift; sourceTree = "<group>"; };
 		301703CA22933AB400168563 /* ASFTC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ASFTC-Bridging-Header.h"; sourceTree = "<group>"; };
 		301703CB22933AB400168563 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../../../Downloads/SWRevealViewController-2.4.0/SWRevealViewController/SWRevealViewController.h"; sourceTree = "<group>"; };
 		301703CC22933AB400168563 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../../../Downloads/SWRevealViewController-2.4.0/SWRevealViewController/SWRevealViewController.m"; sourceTree = "<group>"; };
 		301703D022934C8A00168563 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		301E06C1229531D500B7CE19 /* EventsHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsHistoryViewController.swift; sourceTree = "<group>"; };
+		301E06C32295695D00B7CE19 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		301E06C522956A4B00B7CE19 /* MarkWorkerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkWorkerViewController.swift; sourceTree = "<group>"; };
+		301E06C722956A9100B7CE19 /* EmployeeCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCardsViewController.swift; sourceTree = "<group>"; };
+		301E06C922956AA300B7CE19 /* ToolsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsViewController.swift; sourceTree = "<group>"; };
+		301E06CB22956AC000B7CE19 /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
 		301EB595229427DD00CB80D8 /* ExtensionsForViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsForViewController.swift; sourceTree = "<group>"; };
 		301EB5972294297900CB80D8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		30278C3F2293FE56001599AD /* PopUpViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopUpViewController.storyboard; sourceTree = "<group>"; };
@@ -97,8 +107,8 @@
 				301EB595229427DD00CB80D8 /* ExtensionsForViewController.swift */,
 				301703B422932A4800168563 /* SWRevealViewController.storyboard */,
 				309F159F2294A61B0022F037 /* Login */,
-				301703C8229339C500168563 /* MainSystemStartViewController.swift */,
-				301E06C1229531D500B7CE19 /* EventsHistoryViewController.swift */,
+				301E06CD22956C0600B7CE19 /* MenuItems */,
+				301E06CB22956AC000B7CE19 /* LogoutViewController.swift */,
 			);
 			path = TimeControlSystemClient;
 			sourceTree = "<group>";
@@ -111,6 +121,19 @@
 				301703CA22933AB400168563 /* ASFTC-Bridging-Header.h */,
 			);
 			path = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		301E06CD22956C0600B7CE19 /* MenuItems */ = {
+			isa = PBXGroup;
+			children = (
+				301703C8229339C500168563 /* WorkShiftViewController.swift */,
+				301E06C1229531D500B7CE19 /* EventsHistoryViewController.swift */,
+				301E06C32295695D00B7CE19 /* HistoryViewController.swift */,
+				301E06C522956A4B00B7CE19 /* MarkWorkerViewController.swift */,
+				301E06C722956A9100B7CE19 /* EmployeeCardsViewController.swift */,
+				301E06C922956AA300B7CE19 /* ToolsViewController.swift */,
+			);
+			path = MenuItems;
 			sourceTree = "<group>";
 		};
 		30278C3E2293FE32001599AD /* PopUpViewController */ = {
@@ -303,13 +326,18 @@
 				309F159B229475720022F037 /* API.swift in Sources */,
 				301E06C2229531D500B7CE19 /* EventsHistoryViewController.swift in Sources */,
 				301703D122934C8A00168563 /* MenuViewController.swift in Sources */,
+				301E06C42295695E00B7CE19 /* HistoryViewController.swift in Sources */,
 				301EB596229427DD00CB80D8 /* ExtensionsForViewController.swift in Sources */,
 				309F159A229475720022F037 /* APIResponse.swift in Sources */,
+				301E06CA22956AA300B7CE19 /* ToolsViewController.swift in Sources */,
 				301703C322932C0300168563 /* PopUpViewController.swift in Sources */,
 				301EB5982294297900CB80D8 /* LoginViewController.swift in Sources */,
 				301703CD22933AB400168563 /* SWRevealViewController.m in Sources */,
-				301703C9229339C500168563 /* MainSystemStartViewController.swift in Sources */,
+				301703C9229339C500168563 /* WorkShiftViewController.swift in Sources */,
+				301E06C822956A9100B7CE19 /* EmployeeCardsViewController.swift in Sources */,
+				301E06C622956A4B00B7CE19 /* MarkWorkerViewController.swift in Sources */,
 				309F1599229475720022F037 /* APIRequesting.swift in Sources */,
+				301E06CC22956AC000B7CE19 /* LogoutViewController.swift in Sources */,
 				301703B122932A4800168563 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
