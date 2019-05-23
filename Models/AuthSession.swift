@@ -11,6 +11,7 @@ import RealmSwift
 class AuthSession: Object {
     
     @objc dynamic var authHash = ""
+    @objc dynamic var host = ""
     @objc dynamic var loggedUser = ""
     @objc dynamic var realName = ""
     

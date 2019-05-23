@@ -61,6 +61,7 @@ class LoginViewController: UIViewController {
                 let session = AuthSession()
                 session.authHash = response["auth_hash"] as! String
                 session.realName = response["real_name"] as! String
+                session.host = host!
                 session.loggedUser = username!
                 AuthSessionManager.sharedInstance.saveCurrent(session)
                 self.PasswordField.text = ""

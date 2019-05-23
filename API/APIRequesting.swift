@@ -6,21 +6,29 @@ protocol APIRequesting {
     var httpMethod: HTTPMethod { get }
     var requestURL: String { get }
     var requestData: [String: Any]? { get }
-    var host: String? { get set}
-    var headers: HTTPHeaders? { get }
+    var host: String? { get set }
+    var headers: HTTPHeaders? { get set }
     var onlyAuthorized: Bool { get }
 }
 
 extension APIRequesting {
     
-//    if (self.onlyAuthorized) {
-//
-//    }
-    
     @discardableResult
     func send(completion: ((_ json: JSON) -> Void)?) -> DataRequest? {
-        var host = "http://192.168.1.16:8080/" //52.59.185.179
-        let request = Alamofire.request(host + requestURL, method: httpMethod, parameters: requestData, headers: headers)
+
+        var inMemoryHost: String
+        var headers: HTTPHeaders?
+        if (onlyAuthorized) {
+            let session = AuthSessionManager.sharedInstance.getCurrentSession()
+            inMemoryHost = session.host
+            headers = [
+                "auth_hash": session.authHash
+            ]
+        } else {
+            inMemoryHost = host!
+        }
+        
+        let request = Alamofire.request(inMemoryHost + "/" + requestURL, method: httpMethod, parameters: requestData, headers: headers)
         request.responseJSON { (response) -> Void in
             self.handleResponse(response, then: { (response) in
                 guard case .success (let data) = response , let json = data as? JSON else {
