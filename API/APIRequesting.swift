@@ -19,7 +19,7 @@ extension APIRequesting {
     
     @discardableResult
     func send(completion: ((_ json: JSON) -> Void)?) -> DataRequest? {
-        var host = "http://192.168.1.16:8080/"
+        var host = "http://52.59.185.179:8080/"
         let request = Alamofire.request(host + requestURL, method: httpMethod, parameters: requestData, headers: headers)
         request.responseJSON { (response) -> Void in
             self.handleResponse(response, then: { (response) in

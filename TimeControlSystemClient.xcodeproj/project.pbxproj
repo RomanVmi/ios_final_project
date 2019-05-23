@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0565617DD08A1240743C40A3 /* Pods_TimeControlSystemClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E4F84E986A3C627754AEC2 /* Pods_TimeControlSystemClient.framework */; };
+		301330D822969679009A6ECC /* AuthSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301330D722969679009A6ECC /* AuthSession.swift */; };
+		301330E02296B19E009A6ECC /* AuthSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301330DF2296B19E009A6ECC /* AuthSessionManager.swift */; };
 		301703B122932A4800168563 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301703B022932A4800168563 /* AppDelegate.swift */; };
 		301703B622932A4800168563 /* SWRevealViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 301703B422932A4800168563 /* SWRevealViewController.storyboard */; };
 		301703B822932A4A00168563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 301703B722932A4A00168563 /* Assets.xcassets */; };
@@ -19,11 +21,11 @@
 		301E06C2229531D500B7CE19 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301E06C1229531D500B7CE19 /* EventsViewController.swift */; };
 		301E06C42295695E00B7CE19 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301E06C32295695D00B7CE19 /* HistoryViewController.swift */; };
 		301E06C622956A4B00B7CE19 /* MarkWorkerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301E06C522956A4B00B7CE19 /* MarkWorkerViewController.swift */; };
-		301E06C822956A9100B7CE19 /* EmployeeCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301E06C722956A9100B7CE19 /* EmployeeCardsViewController.swift */; };
+		301E06C822956A9100B7CE19 /* EmployeesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301E06C722956A9100B7CE19 /* EmployeesListViewController.swift */; };
 		301E06CA22956AA300B7CE19 /* ToolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301E06C922956AA300B7CE19 /* ToolsViewController.swift */; };
 		301E06CC22956AC000B7CE19 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301E06CB22956AC000B7CE19 /* LogoutViewController.swift */; };
-		301E06D02295701800B7CE19 /* PersonViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 301E06CF2295701800B7CE19 /* PersonViewController.storyboard */; };
-		301E06D22295702900B7CE19 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301E06D12295702900B7CE19 /* PersonViewController.swift */; };
+		301E06D02295701800B7CE19 /* EmployeeCardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 301E06CF2295701800B7CE19 /* EmployeeCardViewController.storyboard */; };
+		301E06D22295702900B7CE19 /* EmployeeCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301E06D12295702900B7CE19 /* EmployeeCardViewController.swift */; };
 		301E06E22295C51E00B7CE19 /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301E06DD2295C51D00B7CE19 /* EventsTableViewCell.swift */; };
 		301E06E32295C51E00B7CE19 /* EventsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 301E06DE2295C51D00B7CE19 /* EventsTableViewCell.xib */; };
 		301E06E42295C51E00B7CE19 /* UITableViewCellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301E06DF2295C51D00B7CE19 /* UITableViewCellExtensions.swift */; };
@@ -32,6 +34,8 @@
 		301E06EF2295D7E200B7CE19 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301E06EE2295D7E200B7CE19 /* Employee.swift */; };
 		301E06F42295D8B700B7CE19 /* EmployeesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 301E06F32295D8B700B7CE19 /* EmployeesTableViewCell.xib */; };
 		301E06F62295EBC800B7CE19 /* EmployeesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301E06F52295EBC800B7CE19 /* EmployeesTableViewCell.swift */; };
+		301E06FC2295FF2100B7CE19 /* EmployeesTableSmallViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301E06FB2295FF2100B7CE19 /* EmployeesTableSmallViewCell.swift */; };
+		301E06FE2296056B00B7CE19 /* EmployeesTableSmallViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 301E06FD2296056B00B7CE19 /* EmployeesTableSmallViewCell.xib */; };
 		301EB596229427DD00CB80D8 /* ExtensionsForViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301EB595229427DD00CB80D8 /* ExtensionsForViewController.swift */; };
 		301EB5982294297900CB80D8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301EB5972294297900CB80D8 /* LoginViewController.swift */; };
 		30278C402293FE56001599AD /* PopUpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30278C3F2293FE56001599AD /* PopUpViewController.storyboard */; };
@@ -39,10 +43,12 @@
 		309F1599229475720022F037 /* APIRequesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F1596229475720022F037 /* APIRequesting.swift */; };
 		309F159A229475720022F037 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F1597229475720022F037 /* APIResponse.swift */; };
 		309F159B229475720022F037 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F1598229475720022F037 /* API.swift */; };
-		309F15A12294A62E0022F037 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 309F15A02294A62E0022F037 /* Login.storyboard */; };
+		309F15A12294A62E0022F037 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 309F15A02294A62E0022F037 /* LoginViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		301330D722969679009A6ECC /* AuthSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSession.swift; sourceTree = "<group>"; };
+		301330DF2296B19E009A6ECC /* AuthSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSessionManager.swift; sourceTree = "<group>"; };
 		301703AD22932A4800168563 /* TimeControlSystemClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeControlSystemClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		301703B022932A4800168563 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		301703B522932A4800168563 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SWRevealViewController.storyboard; sourceTree = "<group>"; };
@@ -58,11 +64,11 @@
 		301E06C1229531D500B7CE19 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		301E06C32295695D00B7CE19 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		301E06C522956A4B00B7CE19 /* MarkWorkerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkWorkerViewController.swift; sourceTree = "<group>"; };
-		301E06C722956A9100B7CE19 /* EmployeeCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCardsViewController.swift; sourceTree = "<group>"; };
+		301E06C722956A9100B7CE19 /* EmployeesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesListViewController.swift; sourceTree = "<group>"; };
 		301E06C922956AA300B7CE19 /* ToolsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsViewController.swift; sourceTree = "<group>"; };
 		301E06CB22956AC000B7CE19 /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
-		301E06CF2295701800B7CE19 /* PersonViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonViewController.storyboard; sourceTree = "<group>"; };
-		301E06D12295702900B7CE19 /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
+		301E06CF2295701800B7CE19 /* EmployeeCardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EmployeeCardViewController.storyboard; sourceTree = "<group>"; };
+		301E06D12295702900B7CE19 /* EmployeeCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCardViewController.swift; sourceTree = "<group>"; };
 		301E06DD2295C51D00B7CE19 /* EventsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
 		301E06DE2295C51D00B7CE19 /* EventsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventsTableViewCell.xib; sourceTree = "<group>"; };
 		301E06DF2295C51D00B7CE19 /* UITableViewCellExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtensions.swift; sourceTree = "<group>"; };
@@ -71,6 +77,8 @@
 		301E06EE2295D7E200B7CE19 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		301E06F32295D8B700B7CE19 /* EmployeesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmployeesTableViewCell.xib; sourceTree = "<group>"; };
 		301E06F52295EBC800B7CE19 /* EmployeesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesTableViewCell.swift; sourceTree = "<group>"; };
+		301E06FB2295FF2100B7CE19 /* EmployeesTableSmallViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesTableSmallViewCell.swift; sourceTree = "<group>"; };
+		301E06FD2296056B00B7CE19 /* EmployeesTableSmallViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmployeesTableSmallViewCell.xib; sourceTree = "<group>"; };
 		301EB595229427DD00CB80D8 /* ExtensionsForViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsForViewController.swift; sourceTree = "<group>"; };
 		301EB5972294297900CB80D8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		30278C3F2293FE56001599AD /* PopUpViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopUpViewController.storyboard; sourceTree = "<group>"; };
@@ -78,7 +86,7 @@
 		309F1596229475720022F037 /* APIRequesting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequesting.swift; sourceTree = "<group>"; };
 		309F1597229475720022F037 /* APIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		309F1598229475720022F037 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		309F15A02294A62E0022F037 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		309F15A02294A62E0022F037 /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
 		51DDAD6CE8354B2BE1ADD9E4 /* Pods-TimeControlSystemClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeControlSystemClient.debug.xcconfig"; path = "Target Support Files/Pods-TimeControlSystemClient/Pods-TimeControlSystemClient.debug.xcconfig"; sourceTree = "<group>"; };
 		A2E4F84E986A3C627754AEC2 /* Pods_TimeControlSystemClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeControlSystemClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC2BC5828860C10922D5A854 /* Pods-TimeControlSystemClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeControlSystemClient.release.xcconfig"; path = "Target Support Files/Pods-TimeControlSystemClient/Pods-TimeControlSystemClient.release.xcconfig"; sourceTree = "<group>"; };
@@ -96,6 +104,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		301330E12296B938009A6ECC /* EmployeesCards */ = {
+			isa = PBXGroup;
+			children = (
+				301E06C722956A9100B7CE19 /* EmployeesListViewController.swift */,
+				301E06CE22956FA000B7CE19 /* EmployeeCardViewController */,
+			);
+			path = EmployeesCards;
+			sourceTree = "<group>";
+		};
 		301703A422932A4800168563 = {
 			isa = PBXGroup;
 			children = (
@@ -128,7 +145,7 @@
 				301703B422932A4800168563 /* SWRevealViewController.storyboard */,
 				309F159F2294A61B0022F037 /* Login */,
 				301E06CD22956C0600B7CE19 /* MenuItems */,
-				301E06CE22956FA000B7CE19 /* PersonViewController */,
+				301330DF2296B19E009A6ECC /* AuthSessionManager.swift */,
 				301E06CB22956AC000B7CE19 /* LogoutViewController.swift */,
 			);
 			path = TimeControlSystemClient;
@@ -152,19 +169,19 @@
 				301E06C1229531D500B7CE19 /* EventsViewController.swift */,
 				301E06C32295695D00B7CE19 /* HistoryViewController.swift */,
 				301E06C522956A4B00B7CE19 /* MarkWorkerViewController.swift */,
-				301E06C722956A9100B7CE19 /* EmployeeCardsViewController.swift */,
+				301330E12296B938009A6ECC /* EmployeesCards */,
 				301E06C922956AA300B7CE19 /* ToolsViewController.swift */,
 			);
 			path = MenuItems;
 			sourceTree = "<group>";
 		};
-		301E06CE22956FA000B7CE19 /* PersonViewController */ = {
+		301E06CE22956FA000B7CE19 /* EmployeeCardViewController */ = {
 			isa = PBXGroup;
 			children = (
-				301E06CF2295701800B7CE19 /* PersonViewController.storyboard */,
-				301E06D12295702900B7CE19 /* PersonViewController.swift */,
+				301E06CF2295701800B7CE19 /* EmployeeCardViewController.storyboard */,
+				301E06D12295702900B7CE19 /* EmployeeCardViewController.swift */,
 			);
-			path = PersonViewController;
+			path = EmployeeCardViewController;
 			sourceTree = "<group>";
 		};
 		301E06D82295C51D00B7CE19 /* Cells */ = {
@@ -190,7 +207,9 @@
 			isa = PBXGroup;
 			children = (
 				301E06F32295D8B700B7CE19 /* EmployeesTableViewCell.xib */,
+				301E06FD2296056B00B7CE19 /* EmployeesTableSmallViewCell.xib */,
 				301E06F52295EBC800B7CE19 /* EmployeesTableViewCell.swift */,
+				301E06FB2295FF2100B7CE19 /* EmployeesTableSmallViewCell.swift */,
 			);
 			path = Employees;
 			sourceTree = "<group>";
@@ -231,6 +250,7 @@
 				301E06E52295C63400B7CE19 /* Event.swift */,
 				301E06EE2295D7E200B7CE19 /* Employee.swift */,
 				301E06E72295CFE100B7CE19 /* EmployeeCard.swift */,
+				301330D722969679009A6ECC /* AuthSession.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -238,7 +258,7 @@
 		309F159F2294A61B0022F037 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				309F15A02294A62E0022F037 /* Login.storyboard */,
+				309F15A02294A62E0022F037 /* LoginViewController.storyboard */,
 				301EB5972294297900CB80D8 /* LoginViewController.swift */,
 			);
 			path = Login;
@@ -324,11 +344,12 @@
 			files = (
 				309F159422946FA10022F037 /* Podfile in Resources */,
 				301703BB22932A4A00168563 /* LaunchScreen.storyboard in Resources */,
-				309F15A12294A62E0022F037 /* Login.storyboard in Resources */,
+				309F15A12294A62E0022F037 /* LoginViewController.storyboard in Resources */,
+				301E06FE2296056B00B7CE19 /* EmployeesTableSmallViewCell.xib in Resources */,
 				301E06F42295D8B700B7CE19 /* EmployeesTableViewCell.xib in Resources */,
 				301703B822932A4A00168563 /* Assets.xcassets in Resources */,
 				301E06E32295C51E00B7CE19 /* EventsTableViewCell.xib in Resources */,
-				301E06D02295701800B7CE19 /* PersonViewController.storyboard in Resources */,
+				301E06D02295701800B7CE19 /* EmployeeCardViewController.storyboard in Resources */,
 				301703B622932A4800168563 /* SWRevealViewController.storyboard in Resources */,
 				30278C402293FE56001599AD /* PopUpViewController.storyboard in Resources */,
 			);
@@ -347,12 +368,16 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TimeControlSystemClient/Pods-TimeControlSystemClient-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -390,18 +415,21 @@
 			files = (
 				309F159B229475720022F037 /* API.swift in Sources */,
 				301E06C2229531D500B7CE19 /* EventsViewController.swift in Sources */,
-				301E06D22295702900B7CE19 /* PersonViewController.swift in Sources */,
+				301E06D22295702900B7CE19 /* EmployeeCardViewController.swift in Sources */,
+				301330E02296B19E009A6ECC /* AuthSessionManager.swift in Sources */,
 				301E06E22295C51E00B7CE19 /* EventsTableViewCell.swift in Sources */,
 				301703D122934C8A00168563 /* MenuViewController.swift in Sources */,
 				301E06C42295695E00B7CE19 /* HistoryViewController.swift in Sources */,
 				301EB596229427DD00CB80D8 /* ExtensionsForViewController.swift in Sources */,
 				309F159A229475720022F037 /* APIResponse.swift in Sources */,
 				301E06CA22956AA300B7CE19 /* ToolsViewController.swift in Sources */,
+				301E06FC2295FF2100B7CE19 /* EmployeesTableSmallViewCell.swift in Sources */,
 				301703C322932C0300168563 /* PopUpViewController.swift in Sources */,
 				301EB5982294297900CB80D8 /* LoginViewController.swift in Sources */,
 				301703CD22933AB400168563 /* SWRevealViewController.m in Sources */,
 				301703C9229339C500168563 /* WorkShiftViewController.swift in Sources */,
-				301E06C822956A9100B7CE19 /* EmployeeCardsViewController.swift in Sources */,
+				301330D822969679009A6ECC /* AuthSession.swift in Sources */,
+				301E06C822956A9100B7CE19 /* EmployeesListViewController.swift in Sources */,
 				301E06C622956A4B00B7CE19 /* MarkWorkerViewController.swift in Sources */,
 				309F1599229475720022F037 /* APIRequesting.swift in Sources */,
 				301E06CC22956AC000B7CE19 /* LogoutViewController.swift in Sources */,

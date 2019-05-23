@@ -4,4 +4,5 @@ use_frameworks!
 
 target 'TimeControlSystemClient' do
 pod 'Alamofire'
+pod 'RealmSwift'
 end

@@ -53,7 +53,7 @@ extension UIViewController {
         
         let name = String(describing: self)
         let storyboard = UIStoryboard(name: name, bundle: nil)
-        let viewController: PersonViewController = storyboard.instantiateViewController(withIdentifier: name) as! PersonViewController
+        let viewController: EmployeeCardViewController = storyboard.instantiateViewController(withIdentifier: name) as! EmployeeCardViewController
         
         viewController.employee = employee
         return viewController

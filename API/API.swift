@@ -38,13 +38,26 @@ struct API {
         var onlyAuthorized: Bool = true
     }
     
-    struct UsersRecords: APIRequesting {
+    struct Employees: APIRequesting {
         var httpMethod: HTTPMethod { return .get }
         var requestURL: String { return "employees" }
         var requestData: [String : Any]?
         var host: String?
         var headers: HTTPHeaders?
         var onlyAuthorized: Bool = true
+    }
+    
+    struct EmployeeCard: APIRequesting {
+        var httpMethod: HTTPMethod { return .get }
+        var requestURL: String { return "employeecard" }
+        var requestData: [String : Any]?
+        var host: String?
+        var headers: HTTPHeaders?
+        var onlyAuthorized: Bool = true
+        
+        init (with params: [String: Any]?) {
+            self.requestData = params
+        }
     }
     
 //    struct AUTH: APIRequesting {

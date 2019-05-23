@@ -12,6 +12,8 @@ class LogoutViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        AuthSessionManager.sharedInstance.deleteCurrentSession()
+        self.dismiss(animated: true, completion: nil)
     }
 
 }

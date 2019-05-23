@@ -15,27 +15,30 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var PasswordField: UITextField!
     @IBOutlet weak var HostField: UITextField!
     
+    func check_auth() {
+        if (AuthSessionManager.sharedInstance.isAuthorized()) {
+            self.present(SWRevealViewController.instance() as UIViewController, animated: true, completion: nil)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
     }
     
-    
-    func check_auth() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3), execute: {
-            self.present(SWRevealViewController.instance() as UIViewController, animated: true, completion: nil)
-        })
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        self.check_auth()
     }
-    
     
     @IBAction func LoginAction(_ sender: Any) {
         
-        let username = UserNameField.text;
-        let password = PasswordField.text;
+        let username = UserNameField.text
+        let password = PasswordField.text
         let host = HostField.text;
         
         self.view.isUserInteractionEnabled = false
-        self.showSpinner(onView: self.view);
+        self.showSpinner(onView: self.view)
 
         let parameters = [
             "username": username!,
@@ -55,7 +58,12 @@ class LoginViewController: UIViewController {
                 loginMessage = "Добро пожаловать, \(response["real_name"] as! String)!"
                 loginImage = "LoginSuccess"
                 loginStatus = true
-                
+                let session = AuthSession()
+                session.authHash = response["auth_hash"] as! String
+                session.realName = response["real_name"] as! String
+                session.loggedUser = username!
+                AuthSessionManager.sharedInstance.saveCurrent(session)
+                self.PasswordField.text = ""
             }
             else
                 if response["error"] != nil {
@@ -72,7 +80,9 @@ class LoginViewController: UIViewController {
             popUpVC.didMove(toParent: self)
             
             if loginStatus {
-                self.check_auth()
+                DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3), execute: {
+                    self.check_auth()
+                })
             }
         }
     }
