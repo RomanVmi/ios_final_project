@@ -33,10 +33,10 @@ class EmployeesListViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         EmployeesTableViewCell.register(for: tableView)
-        updateTodos()
+        updateEmployees()
     }
     
-    private func updateTodos() {
+    private func updateEmployees() {
         API.Employees().send { [weak self] (response) in
             guard let self = self else { return }
             

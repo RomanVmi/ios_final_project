@@ -25,7 +25,6 @@ class EventsViewController: UIViewController {
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
-        
         setup()
     }
     
@@ -34,10 +33,10 @@ class EventsViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         EventsTableViewCell.register(for: tableView)
-        updateTodos()
+        updateEvents()
     }
     
-    private func updateTodos() {
+    private func updateEvents() {
         API.Events().send { [weak self] (response) in
             guard let self = self else { return }
             

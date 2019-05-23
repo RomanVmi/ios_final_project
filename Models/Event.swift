@@ -6,7 +6,6 @@
 //  Copyright © 2019 Роман Чулкевич. All rights reserved.
 //
 
-
 class Event {
     
     var title: String

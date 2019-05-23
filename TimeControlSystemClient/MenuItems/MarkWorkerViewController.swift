@@ -33,10 +33,10 @@ class MarkWorkerViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         EmployeesTableViewCell.register(for: tableView)
-        updateTodos()
+        updateWorkers()
     }
 
-    private func updateTodos() {
+    private func updateWorkers() {
         API.Employees().send { [weak self] (response) in
             guard let self = self else { return }
             

@@ -31,17 +31,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Раздел еще недоступен" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0QP-5h-wjQ">
-                                <rect key="frame" x="97" y="436" width="220" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hCf-wR-vbq">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="0QP-5h-wjQ" firstAttribute="centerX" secondItem="haa-Px-tvg" secondAttribute="centerX" id="6Gg-Tb-ygd"/>
-                            <constraint firstItem="0QP-5h-wjQ" firstAttribute="centerY" secondItem="haa-Px-tvg" secondAttribute="centerY" id="zMi-Rc-N2P"/>
+                            <constraint firstItem="hCf-wR-vbq" firstAttribute="leading" secondItem="PBL-kQ-e2E" secondAttribute="leading" id="EFv-h5-Xvk"/>
+                            <constraint firstItem="hCf-wR-vbq" firstAttribute="top" secondItem="PBL-kQ-e2E" secondAttribute="top" id="Y9r-1P-Gs3"/>
+                            <constraint firstItem="hCf-wR-vbq" firstAttribute="bottom" secondItem="PBL-kQ-e2E" secondAttribute="bottom" id="aHc-pX-knh"/>
+                            <constraint firstItem="hCf-wR-vbq" firstAttribute="trailing" secondItem="PBL-kQ-e2E" secondAttribute="trailing" id="wP1-iM-J0Z"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PBL-kQ-e2E"/>
                     </view>
@@ -52,11 +52,12 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="menuButton" destination="vUc-jM-zQL" id="cWB-si-p6a"/>
+                        <outlet property="tableView" destination="hCf-wR-vbq" id="YZ5-26-Gnv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nuG-VL-Q0a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2513" y="-305"/>
+            <point key="canvasLocation" x="2511.594202898551" y="-305.35714285714283"/>
         </scene>
         <!--Events View Controller-->
         <scene sceneID="G2L-Ef-Sxm">
@@ -706,17 +707,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Здесь будут настройки =)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hsy-BC-bSD">
-                                <rect key="frame" x="60.5" y="433" width="293.5" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Раздел пока недоступен" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Gn-0o-uNC">
+                                <rect key="frame" x="94.5" y="436" width="225" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Hsy-BC-bSD" firstAttribute="centerX" secondItem="23O-zx-hB6" secondAttribute="centerX" id="2YH-5m-C3q"/>
-                            <constraint firstItem="Hsy-BC-bSD" firstAttribute="centerY" secondItem="23O-zx-hB6" secondAttribute="centerY" id="6Ql-3v-gD7"/>
+                            <constraint firstItem="9Gn-0o-uNC" firstAttribute="centerY" secondItem="23O-zx-hB6" secondAttribute="centerY" id="85Q-ls-1qX"/>
+                            <constraint firstItem="9Gn-0o-uNC" firstAttribute="centerX" secondItem="23O-zx-hB6" secondAttribute="centerX" id="rrL-N8-G3E"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cQD-hE-rS7"/>
                     </view>

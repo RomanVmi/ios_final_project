@@ -1,8 +1,8 @@
 import Alamofire
 
 struct API {
+    
     struct Login: APIRequesting {
-        
         var httpMethod: HTTPMethod { return .post }
         var requestURL: String { return "login" }
         var requestData: [String : Any]?
@@ -16,6 +16,24 @@ struct API {
         }
     }
     
+    struct WorkShift: APIRequesting {
+        var httpMethod: HTTPMethod { return .get }
+        var requestURL: String { return "workshift" }
+        var requestData: [String : Any]?
+        var host: String?
+        var headers: HTTPHeaders?
+        var onlyAuthorized: Bool = true
+    }
+    
+    struct Events: APIRequesting {
+        var httpMethod: HTTPMethod { return .get }
+        var requestURL: String { return "events" }
+        var requestData: [String : Any]?
+        var host: String?
+        var headers: HTTPHeaders?
+        var onlyAuthorized: Bool = true
+    }
+    
     struct History: APIRequesting {
         var httpMethod: HTTPMethod { return .get }
         var requestURL: String { return "history" }
@@ -27,15 +45,6 @@ struct API {
         init (with params: [String: Any]?) {
             self.requestData = params
         }
-    }
-    
-    struct Events: APIRequesting {
-        var httpMethod: HTTPMethod { return .get }
-        var requestURL: String { return "events" }
-        var requestData: [String : Any]?
-        var host: String?
-        var headers: HTTPHeaders?
-        var onlyAuthorized: Bool = true
     }
     
     struct Employees: APIRequesting {

@@ -10,6 +10,11 @@
 		0565617DD08A1240743C40A3 /* Pods_TimeControlSystemClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E4F84E986A3C627754AEC2 /* Pods_TimeControlSystemClient.framework */; };
 		301330D822969679009A6ECC /* AuthSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301330D722969679009A6ECC /* AuthSession.swift */; };
 		301330E02296B19E009A6ECC /* AuthSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301330DF2296B19E009A6ECC /* AuthSessionManager.swift */; };
+		301330E32296CD62009A6ECC /* WorkShift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301330E22296CD62009A6ECC /* WorkShift.swift */; };
+		301330E62296DEE6009A6ECC /* WorkShiftTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 301330E52296DEE6009A6ECC /* WorkShiftTableViewCell.xib */; };
+		301330E82296DF28009A6ECC /* WorkShiftTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301330E72296DF28009A6ECC /* WorkShiftTableViewCell.swift */; };
+		301330EE2296E800009A6ECC /* PositionHeaderCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301330ED2296E800009A6ECC /* PositionHeaderCustomView.swift */; };
+		301330F02296EA53009A6ECC /* PositionHeaderCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 301330EF2296EA53009A6ECC /* PositionHeaderCustomView.xib */; };
 		301703B122932A4800168563 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301703B022932A4800168563 /* AppDelegate.swift */; };
 		301703B622932A4800168563 /* SWRevealViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 301703B422932A4800168563 /* SWRevealViewController.storyboard */; };
 		301703B822932A4A00168563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 301703B722932A4A00168563 /* Assets.xcassets */; };
@@ -49,6 +54,11 @@
 /* Begin PBXFileReference section */
 		301330D722969679009A6ECC /* AuthSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSession.swift; sourceTree = "<group>"; };
 		301330DF2296B19E009A6ECC /* AuthSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSessionManager.swift; sourceTree = "<group>"; };
+		301330E22296CD62009A6ECC /* WorkShift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkShift.swift; sourceTree = "<group>"; };
+		301330E52296DEE6009A6ECC /* WorkShiftTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkShiftTableViewCell.xib; sourceTree = "<group>"; };
+		301330E72296DF28009A6ECC /* WorkShiftTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkShiftTableViewCell.swift; sourceTree = "<group>"; };
+		301330ED2296E800009A6ECC /* PositionHeaderCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionHeaderCustomView.swift; sourceTree = "<group>"; };
+		301330EF2296EA53009A6ECC /* PositionHeaderCustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PositionHeaderCustomView.xib; sourceTree = "<group>"; };
 		301703AD22932A4800168563 /* TimeControlSystemClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeControlSystemClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		301703B022932A4800168563 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		301703B522932A4800168563 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SWRevealViewController.storyboard; sourceTree = "<group>"; };
@@ -113,13 +123,40 @@
 			path = EmployeesCards;
 			sourceTree = "<group>";
 		};
+		301330E42296DECC009A6ECC /* WorkShift */ = {
+			isa = PBXGroup;
+			children = (
+				301330E52296DEE6009A6ECC /* WorkShiftTableViewCell.xib */,
+				301330E72296DF28009A6ECC /* WorkShiftTableViewCell.swift */,
+			);
+			path = WorkShift;
+			sourceTree = "<group>";
+		};
+		301330F12296EA5D009A6ECC /* Tables */ = {
+			isa = PBXGroup;
+			children = (
+				301330F22296EA6D009A6ECC /* Headers */,
+				301E06D82295C51D00B7CE19 /* Cells */,
+			);
+			path = Tables;
+			sourceTree = "<group>";
+		};
+		301330F22296EA6D009A6ECC /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				301330EF2296EA53009A6ECC /* PositionHeaderCustomView.xib */,
+				301330ED2296E800009A6ECC /* PositionHeaderCustomView.swift */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
 		301703A422932A4800168563 = {
 			isa = PBXGroup;
 			children = (
 				309F159322946FA10022F037 /* Podfile */,
-				309F159C229475E60022F037 /* Models */,
-				301E06D82295C51D00B7CE19 /* Cells */,
 				309F15952294755D0022F037 /* API */,
+				309F159C229475E60022F037 /* Models */,
+				301330F12296EA5D009A6ECC /* Tables */,
 				301703C42293364800168563 /* SWRevealViewController */,
 				30278C3E2293FE32001599AD /* PopUpViewController */,
 				301703AF22932A4800168563 /* TimeControlSystemClient */,
@@ -188,8 +225,9 @@
 			isa = PBXGroup;
 			children = (
 				301E06DF2295C51D00B7CE19 /* UITableViewCellExtensions.swift */,
-				301E06F02295D85500B7CE19 /* Employees */,
 				301E06DC2295C51D00B7CE19 /* Events */,
+				301E06F02295D85500B7CE19 /* Employees */,
+				301330E42296DECC009A6ECC /* WorkShift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -207,8 +245,8 @@
 			isa = PBXGroup;
 			children = (
 				301E06F32295D8B700B7CE19 /* EmployeesTableViewCell.xib */,
-				301E06FD2296056B00B7CE19 /* EmployeesTableSmallViewCell.xib */,
 				301E06F52295EBC800B7CE19 /* EmployeesTableViewCell.swift */,
+				301E06FD2296056B00B7CE19 /* EmployeesTableSmallViewCell.xib */,
 				301E06FB2295FF2100B7CE19 /* EmployeesTableSmallViewCell.swift */,
 			);
 			path = Employees;
@@ -251,6 +289,7 @@
 				301E06EE2295D7E200B7CE19 /* Employee.swift */,
 				301E06E72295CFE100B7CE19 /* EmployeeCard.swift */,
 				301330D722969679009A6ECC /* AuthSession.swift */,
+				301330E22296CD62009A6ECC /* WorkShift.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -345,11 +384,13 @@
 				309F159422946FA10022F037 /* Podfile in Resources */,
 				301703BB22932A4A00168563 /* LaunchScreen.storyboard in Resources */,
 				309F15A12294A62E0022F037 /* LoginViewController.storyboard in Resources */,
+				301330E62296DEE6009A6ECC /* WorkShiftTableViewCell.xib in Resources */,
 				301E06FE2296056B00B7CE19 /* EmployeesTableSmallViewCell.xib in Resources */,
 				301E06F42295D8B700B7CE19 /* EmployeesTableViewCell.xib in Resources */,
 				301703B822932A4A00168563 /* Assets.xcassets in Resources */,
 				301E06E32295C51E00B7CE19 /* EventsTableViewCell.xib in Resources */,
 				301E06D02295701800B7CE19 /* EmployeeCardViewController.storyboard in Resources */,
+				301330F02296EA53009A6ECC /* PositionHeaderCustomView.xib in Resources */,
 				301703B622932A4800168563 /* SWRevealViewController.storyboard in Resources */,
 				30278C402293FE56001599AD /* PopUpViewController.storyboard in Resources */,
 			);
@@ -414,6 +455,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				309F159B229475720022F037 /* API.swift in Sources */,
+				301330E32296CD62009A6ECC /* WorkShift.swift in Sources */,
+				301330E82296DF28009A6ECC /* WorkShiftTableViewCell.swift in Sources */,
 				301E06C2229531D500B7CE19 /* EventsViewController.swift in Sources */,
 				301E06D22295702900B7CE19 /* EmployeeCardViewController.swift in Sources */,
 				301330E02296B19E009A6ECC /* AuthSessionManager.swift in Sources */,
@@ -425,6 +468,7 @@
 				301E06CA22956AA300B7CE19 /* ToolsViewController.swift in Sources */,
 				301E06FC2295FF2100B7CE19 /* EmployeesTableSmallViewCell.swift in Sources */,
 				301703C322932C0300168563 /* PopUpViewController.swift in Sources */,
+				301330EE2296E800009A6ECC /* PositionHeaderCustomView.swift in Sources */,
 				301EB5982294297900CB80D8 /* LoginViewController.swift in Sources */,
 				301703CD22933AB400168563 /* SWRevealViewController.m in Sources */,
 				301703C9229339C500168563 /* WorkShiftViewController.swift in Sources */,
